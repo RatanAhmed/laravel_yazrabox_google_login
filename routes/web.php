@@ -13,7 +13,7 @@ Route::get('auth/google/callback', [GoogleController::class, 'callbackToGoogle']
 
 Route::group(['middleware' => 'auth'],function(){
     Route::get('/', function () {
-        return view('auth.login');
+        return redirect()->route('home');
     });
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::resource('users', UsersController::class);
