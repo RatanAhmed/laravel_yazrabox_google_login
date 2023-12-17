@@ -63,7 +63,7 @@
                                     </a>
                                 @endif
                             </div>
-                            <div class="text-center mt-2">
+                            <div class="text-center mt-4">
                                 <a href="{{ url('auth/google') }}" style="margin-top: 0px !important;background: #C84130;color: #ffffff;padding: 8px;border-radius:6px;" class="ml-2">
                                     <i class="bi bi-google"></i> <strong>Login with Google</strong>
                                   </a>
